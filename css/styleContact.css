@@ -7,6 +7,7 @@
     --marrom: #847059;
     --bordo: #5E2939;
     --cinza-escuro: #4B4B4D;
+    --cor-form: #13131a;
 }
 
 body {
@@ -31,12 +32,14 @@ body {
 .contact .row {
     display: flex;
     max-width: 100%;
-    background-color: #13131a;
+    background-color: var(--cor-form);
     border-radius: 20px;
     flex-wrap: wrap;
     gap: 1em;
+    margin-bottom: 10%;
 
 }
+
 .contact .row form {
     flex: 1 1 4rem;
     padding: 5rem 2rem;
@@ -55,11 +58,11 @@ body {
     margin-top: 2rem;
     margin-bottom: 2rem;
     background: black;
-    border:var(--border);
+    border: var(--border);
 }
 
 .contact .row form .inputBox span {
-    color:var(--font-color);
+    color: var(--font-color);
     font-size: 2rem;
     padding-left: 2rem;
 }
@@ -74,7 +77,8 @@ body {
 }
 
 /* tirar a borda padrão do input */
-.contact input, textarea {
+.contact input,
+textarea {
     border: none;
 }
 
@@ -100,9 +104,30 @@ a .button {
 /*============= Início do media queries  =============*/
 @media (max-width:991px) {
 
+    section#corpo {
+        padding: 15% 0;
+        font-size: 75%;
+    }
+
+    .contact {
+        padding: 5% 2%;
+    }
+
+
     /* mobile botão - aumentar a largura dos botões */
     a .button {
         width: 90%;
         font-size: 1.5em;
     }
+
+    fieldset,
+    input,
+    .inputBox,
+    a,
+    ::placeholder {
+        font-size: 90%;
+    }
+
+    
+
 }
