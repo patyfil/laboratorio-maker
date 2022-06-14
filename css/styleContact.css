@@ -1,0 +1,69 @@
+/* o id corpo terá um padding-top de 10% para não ficar atras do header */
+.corpo {
+    /* height: 90%; */
+    padding-top: 10%;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.corpo h1 {
+    color: var(--font-color);
+}
+
+.contact {
+    display: flex;
+    background: #13131a;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.contact form {
+    flex: 1 1 45rem;
+    padding: 5rem 2rem;
+    text-align: left;
+}
+
+.contact form legend {
+    text-transform: uppercase;
+    font-size: 1.7em;
+    /* color: var(--font-color); */
+}
+
+form .inputBox {
+    display: flex;
+    align-items: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background: black;
+
+}
+
+form .inputBox input,
+textarea {
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.7rem;
+    text-transform: none;
+    background: black;
+    border: var(--border);
+}
+
+.notificacao {
+    font-size: 1.2em;
+}
+
+a .button {
+    width: 60%;
+    font-size: 2em;
+    box-shadow: 0.3em 0.3em 0.3em #999;
+}
+
+/*============= Início do media queries  =============*/
+@media (max-width:991px) {
+
+    /* mobile botão - aumentar a largura dos botões */
+    a .button {
+        width: 90%;
+        font-size: 1.5em;
+    }
+}
