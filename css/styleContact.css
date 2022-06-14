@@ -1,3 +1,19 @@
+/* root é para declarar uma variável */
+:root {
+    --hover-color: #D1930E;
+    --font-color: #D1930E;
+    --border: 1px solid #D1930E;
+    --border-test: 1px solid #64e680;
+    --marrom: #847059;
+    --bordo: #5E2939;
+    --cinza-escuro: #4B4B4D;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+}
+
 /* o id corpo terá um padding-top de 10% para não ficar atras do header */
 .corpo {
     /* height: 90%; */
@@ -10,51 +26,74 @@
     color: var(--font-color);
 }
 
-.contact {
+/* ==================== Formatação do formulário ==================== */
+
+.contact .row {
     display: flex;
-    background: #13131a;
+    max-width: 100%;
+    background-color: #13131a;
+    border-radius: 20px;
     flex-wrap: wrap;
-    gap: 1rem;
-}
+    gap: 1em;
 
-.contact form {
-    flex: 1 1 45rem;
+}
+.contact .row form {
+    flex: 1 1 4rem;
     padding: 5rem 2rem;
-    text-align: left;
+    text-align: center;
 }
 
-.contact form legend {
+.contact .row form legend {
     text-transform: uppercase;
-    font-size: 1.7em;
-    /* color: var(--font-color); */
+    font-size: 1.5em;
+    color: #fff;
 }
 
-form .inputBox {
+.contact .row form .inputBox {
     display: flex;
     align-items: center;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     background: black;
-
+    border:var(--border);
 }
 
-form .inputBox input,
-textarea {
+.contact .row form .inputBox span {
+    color:var(--font-color);
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+
+.contact .row form .inputBox input {
     width: 100%;
+    padding: 1em;
+    font-size: 1.3em;
+    /* color: #fff; */
+    text-transform: none;
+    background: none;
+}
+
+/* tirar a borda padrão do input */
+.contact input, textarea {
+    border: none;
+}
+
+textarea {
+    height: 150px;
+    width: 100%;
+    background-color: black;
     padding: 2rem;
     font-size: 1.7rem;
-    text-transform: none;
-    background: black;
-    border: var(--border);
 }
 
 .notificacao {
     font-size: 1.2em;
+    text-align: initial;
 }
 
 a .button {
-    width: 60%;
-    font-size: 2em;
+    width: 40%;
+    font-size: 1.7em;
     box-shadow: 0.3em 0.3em 0.3em #999;
 }
 

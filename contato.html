@@ -52,33 +52,32 @@
             <p>Evento Presencial e GRATUITO</p>
             <p>Dia 13 de junho na Palhoça em Santa Catarina</p>
         </div>
-        <section id="contact">
-            <div class="contact">
+        <section class="contact" id="contact">
+            <div class="row">
                 <form name="contact" action="resposta.html" method="GET">
                     <fieldset>
                         <legend>Formulário de Inscrição:</legend>
                         <div class="inputBox">
-                            <input type="text" placeholder="Nome Completo" maxlength="40" />
+                            <span class="fas fa-user"></span>
+                            <input type="text" id="name" placeholder="Nome Completo" maxlength="40" />
                         </div>
-                        <br />
                         <div class="inputBox">
-                            <input type="email" placeholder="e-mail" />
+                            <span class="fas fa-envelope"></span>
+                            <input type="email" id="email" placeholder="e-mail" />
                         </div>
-                        <br />
                         <div class="inputBox">
-                            <input type="tel" placeholder="Telefone com DDD : (00) 00000-0000"><label for="telefone"> 
-                        </label>
+                            <span class="fas fa-phone"></span>
+                            <input type="tel" placeholder="Telefone com DDD : (00) 00000-0000">
                         </div>
-                        <br />
                         <div class="notificacao">
                             <input name="notificacao" type="checkbox" checked />Deseja receber nossas novidades?
                         </div>
                         <div class="inputBox">
+                            <span class="fas fa-message"></span>
                             <textarea class="field" name="message" rows="5" maxlength="800"
                                 placeholder="Digite sua mensagem aqui"></textarea>
                         </div>
-                        <br />
-                        <a >
+                        <a>
                             <input class="button" name="botao" type="submit" value="Confirmar minha Inscrição" />
                         </a>
 
@@ -89,7 +88,6 @@
     </section>
     <footer>
         <!--Conteúdo do rodapé-->
-        <!-- <a href="index.html"><img src="img/logo-horiz.png" alt="logo do Laboratório Maker." /></a> -->
         <div class="partes">
             <div class="parte1">
                 <h2>Contato</h2>

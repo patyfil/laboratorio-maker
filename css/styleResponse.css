@@ -1,3 +1,14 @@
+/* root é para declarar uma variável */
+:root {
+    --hover-color: #D1930E;
+    --font-color: #D1930E;
+    --border: 1px solid #D1930E;
+    --border-test: 1px solid #64e680;
+    --marrom: #847059;
+    --bordo: #5E2939;
+    --cinza-escuro: #4B4B4D;
+}
+
 /* o id corpo terá um padding-top de 10% para não ficar atras do header */
 .resposta {
     height: 60vh;
@@ -21,7 +32,7 @@
 
     /* mobile botão - aumentar a largura dos botões */
     .resposta {
-        margin-top: 25%;
+        margin-top: 10%;
         font-size: 1.2em;
     }
 

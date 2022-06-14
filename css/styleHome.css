@@ -1,0 +1,221 @@
+/* root é para declarar uma variável */
+:root {
+    --hover-color: #D1930E;
+    --font-color: #D1930E;
+    --border: 1px solid #D1930E;
+    --border-test: 1px solid #64e680;
+    --marrom: #847059;
+    --bordo: #5E2939;
+    --cinza-escuro: #4B4B4D;
+}
+
+/* ============= Início da página principal ============= */
+/* alinhamento da pág principal */
+.pag-principal {
+    height: 100%;
+    padding: 10%;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+/* definir a cor do h1 da pág principal */
+.pag-principal h1 {
+    color: var(--font-color);
+}
+
+/* Fim da página principal */
+/*============= Início do Slide de fotos =============*/
+section#galeria {
+    background-image: url(../img/banner.png);
+    background-repeat: no-repeat;
+    height: 80vh;
+    text-align: center;
+
+}
+
+section#galeria h1 {
+    /* color: white; */
+    padding: 4%;
+    margin: 0;
+}
+
+section#galeria .content {
+    height: 520px;
+    width: 935px;
+    border-radius: 20px;
+    overflow: hidden;
+    /*dentro da borda*/
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* section .banner .content {
+    height: 520px;
+    width: 935px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+
+.navigation {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+/* Classe das barras para troca de fotos */
+.bar {
+    width: 70px;
+    height: 17px;
+    border: 2px solid white;
+    margin: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+/* Quando passar o mouse em cima da barra / efeito(hover) */
+.bar:hover {
+    background-color: white;
+}
+
+/* Para tirar as bolinhas da navegação de fotos*/
+.slides input {
+    display: none;
+}
+
+.slides {
+    display: flex;
+    /*para colocar as imagens uma do lado da outra*/
+    width: 500%;
+    /*para aparecer 1 img de cada vez, 100% para cada img*/
+    height: 100%;
+}
+
+.slide {
+    width: 20%;
+    /* 20% para cada img totalizando 100% */
+    transition: .6s;
+}
+
+.slide img {
+    width: 100%;
+    /* para não cortar a img dentro do formato da div */
+    /* height: 100%; */
+}
+
+/* para mover as imagens */
+/* Quando o primeiro imput estiver checado, o s1 terá uma margem */
+#slide1:checked~.s1 {
+    margin-left: 0;
+}
+
+/* Quando o slide2 estiver selecionado, o s1 terá uma margem de -20% */
+#slide2:checked~.s1 {
+    margin-left: -20%;
+}
+
+#slide3:checked~.s1 {
+    margin-left: -40%;
+}
+
+#slide4:checked~.s1 {
+    margin-left: -60%;
+}
+
+#slide5:checked~.s1 {
+    margin-left: -80%;
+}
+
+/* Seção 04 */
+#secao04 p {
+    font-size: 1.3em;
+}
+
+/*============= Início da seção 2 - OBJETIVOS =============*/
+/* Definições do h1: "O EVENTO" */
+section#secao02 h1 {
+    font-size: 2em;
+    text-align: center;
+    padding: 2%;
+}
+
+/* Definindo a cor dos subtítulos das seções 2,3 e 4 */
+section#secao02 h2,
+#secao03 h2,
+#secao04 h2 {
+    color: var(--font-color);
+}
+/*============= Fim da seção 2 =============*/
+/*============= Início da seção 5 - TABELA =============*/
+section#secao05 {
+    display: grid;
+    padding: 2% 10%;
+}
+
+/* tamanho da fonte das colunas */
+section#secao05 table td {
+    font-size: 1.2em;
+}
+
+/* definindo a cor do título da tabela */
+section#secao05 table th {
+    font-size: 1.2em;
+    color: var(--font-color);
+}
+/*============= Fim da seção 5 =============*/
+/*============= Início da seção 6 - BÔNUS =============*/
+section#secao06 .box-geral {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+section#secao06 .box {
+    border: var(--border);
+    border-radius: 5%;
+    width: 300px;
+    height: 300px;
+    padding: 2em 1em 0;
+    margin: 1em;
+}
+
+section#secao06 h1 {
+    text-align: center;
+}
+
+section#secao06 h3 {
+    color: var(--font-color);
+}
+
+/*============= Fim da seção 6 =============*/
+/*============= Início da seção 7 - call to action - Preencher Formulário =============*/
+section#secao07 {
+    height: 100%;
+    padding-top: 1%;
+    padding-bottom: 10%;
+    text-align: center;
+}
+
+section#secao07 p {
+    font-size: 1.5em;
+}
+/*============= Fim da seção 7 =============*/
+/*============= Início da seção 8 - iframes mapa e vídeo =============*/
+section#secao08 .iframe {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 4%;
+}
+
+section#secao08 h2 {
+    color: var(--font-color);
+}
+/*============= Fim da seção 8 =============*/
