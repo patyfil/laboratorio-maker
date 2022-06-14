@@ -34,19 +34,22 @@ body {
 section {
     padding: 0 10%;
 }
-/* Definindo as características dos parágrafos e listas dos itens */ 
+
+/* Definindo as características dos parágrafos e listas dos itens */
 p,
 li {
     font-size: 1.3em;
     /*15,6pt*/
     font-family: "Atma Medium";
 }
+
 /* Definindo a fonte dos títulos */
 h1,
 h2,
 h3 {
     font-family: "Atma SemiBold";
 }
+
 /* Definindo os tamanhos das fontes */
 h1 {
     font-size: 1.8em;
@@ -102,6 +105,7 @@ hr {
     /* translate reposiciona um elemento na direção horizontal e/ou vertical. 
     Suas coordenadas definem o quanto o elemento se move em cada direção. */
 }
+
 /* ================== FIM - Estilo padrão para todas as páginas ================== */
 /* ================== FORMATAÇÃO DO CABEÇALHO ================== */
 header {
@@ -168,6 +172,7 @@ header .logo {
 #btn-mobile {
     display: none;
 }
+
 /*============= Fim do Header =============*/
 
 /*============= Início Footer =============*/
@@ -394,11 +399,13 @@ footer p {
         justify-content: center;
     }
 
-    /* mobile footer */
-    footer .partes {
+    /* mobile - Alinhando o footer */
+
+    .partes {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-evenly;
+        flex-direction: column;
+        align-content: center;
     }
 }
 

@@ -103,31 +103,23 @@ a .button {
 
 /*============= Início do media queries  =============*/
 @media (max-width:991px) {
-
+    /* ajustando o corpo da pág */
     section#corpo {
-        padding: 15% 0;
+        padding: 15% 2%;
         font-size: 75%;
     }
-
+    /* ajustando formulário */
     .contact {
         padding: 5% 2%;
     }
-
+    /* ajustando o link do botão */
+    a {
+        font-size: 70%;
+    }
 
     /* mobile botão - aumentar a largura dos botões */
     a .button {
         width: 90%;
         font-size: 1.5em;
     }
-
-    fieldset,
-    input,
-    .inputBox,
-    a,
-    ::placeholder {
-        font-size: 90%;
-    }
-
-    
-
 }
