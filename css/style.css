@@ -324,8 +324,8 @@ footer p {
 
     #btn-mobile {
         display: flex;
-        padding: 0.5rem 1rem;
-        font-size: 1.3em;
+        padding: 0.5rem 2rem;
+        font-size: 1.5em;
         border: none;
         background: none;
         cursor: pointer;
@@ -333,16 +333,16 @@ footer p {
     }
 
     #hamburger {
-        border-top: 4px solid;
-        width: 30px;
+        border-top: 6px solid;
+        width: 40px;
     }
 
     #hamburger::after,
     #hamburger::before {
         content: '';
         display: block;
-        width: 30px;
-        height: 4px;
+        width: 40px;
+        height: 6px;
         background: currentColor;
         margin-top: 7px;
         transition: 0.3s;
@@ -384,12 +384,13 @@ footer p {
         flex-direction: column;
         align-content: center;
     }
+
     footer .share {
         padding: 2%;
     }
 }
 
-/* @media (max-width:768px) {
+@media (max-width:768px) {
 
     header {
         font-size: 0.1em;
@@ -400,7 +401,23 @@ footer p {
         height: 50%;
     }
 
-} */
+    #btn-mobile {
+        padding: 0.5rem 1rem;
+        font-size: 1.3em;
+    }
+
+    #hamburger {
+        border-top: 4px solid;
+        width: 30px;
+    }
+
+    #hamburger::after,
+    #hamburger::before {
+        width: 30px;
+        height: 4px;
+        margin-top: 7px;
+    }
+}
 
 @media (max-width:450px) {
 
