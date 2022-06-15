@@ -50,14 +50,14 @@ p,
 li {
     font-size: 1.3em;
     /*15,6pt*/
-    font-family: "Atma Medium", cursive;
+    font-family: "Atma Medium";
 }
 
 /* Definindo a fonte dos títulos */
 h1,
 h2,
 h3 {
-    font-family: "Atma SemiBold", cursive;
+    font-family: "Atma SemiBold";
 }
 
 /* Definindo o tamanho da fonte dos títulos */
