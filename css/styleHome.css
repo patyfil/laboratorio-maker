@@ -26,7 +26,8 @@
 
 /* Fim da página principal */
 /*============= Início do Slide de fotos =============*/
-.galeria {
+/* container para centralizar a galeria sem distorcer as imagens */
+.container-galeria {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -112,8 +113,8 @@
 .navigation-auto {
     position: absolute;
     display: flex;
-    width: 800px;
     justify-content: center;
+    width: 800px;
     margin-top: 460px;
 }
 
@@ -240,7 +241,6 @@ section#secao08 h2 {
 
 /* ============= MOBILE DA PÁG HOME ============= */
 @media (max-width:991px) {
-
     .pag-principal {
         padding: 20% 3%;
         padding-bottom: 6%;
@@ -293,10 +293,10 @@ section#secao08 h2 {
         justify-content: center;
     }
 
-    .galeria {
+    .container-galeria {
         width: 100%;
-        /* width: 100vh; */
         display: block;
+        align-items: center;
         height: 5%;
     }
 
@@ -318,19 +318,19 @@ section#secao08 h2 {
     }
 
     .slides img {
-
         width: 80vh;
         height: 50vh;
     }
 
     .navigation-auto {
-        width: 370px;
+        /* display: none; */
+        width: 350px;
         margin-top: 235px;
     }
 
     .navigation-manual {
         display: none;
-        /* width: 370px;
-        margin-top: -20px; */
+        /* width: 220px;
+        margin-top: -30px; */
     }
 }
