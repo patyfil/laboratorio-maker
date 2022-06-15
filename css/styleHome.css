@@ -330,7 +330,8 @@ section#secao08 h2 {
     }
 
     .navigation-manual {
-        width: 370px;
-        margin-top: -20px;
+        display: none;
+        /* width: 370px;
+        margin-top: -20px; */
     }
 }
