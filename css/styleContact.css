@@ -10,22 +10,6 @@
     --cor-form: #13131a;
 }
 
-body {
-    width: 100%;
-    min-height: 100vh;
-}
-
-/* o id corpo terá um padding-top de 10% para não ficar atras do header */
-.corpo {
-    /* height: 90%; */
-    padding-top: 10%;
-    text-align: center;
-    font-size: 1.5em;
-}
-
-.corpo h1 {
-    color: var(--font-color);
-}
 
 /* ==================== Formatação do formulário ==================== */
 
@@ -95,31 +79,20 @@ textarea {
     text-align: initial;
 }
 
-a .button {
-    width: 40%;
+.button {
     font-size: 1.7em;
     box-shadow: 0.3em 0.3em 0.3em #999;
 }
 
 /*============= Início do media queries  =============*/
 @media (max-width:991px) {
-    /* ajustando o corpo da pág */
-    section#corpo {
-        padding: 15% 2%;
-        font-size: 75%;
-    }
+
     /* ajustando formulário */
     .contact {
-        padding: 5% 2%;
+        padding: 0 2%;
     }
     /* ajustando o link do botão */
-    a {
+    .contact a {
         font-size: 70%;
-    }
-
-    /* mobile botão - aumentar a largura dos botões */
-    a .button {
-        width: 90%;
-        font-size: 1.5em;
     }
 }

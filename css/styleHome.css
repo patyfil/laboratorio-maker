@@ -9,6 +9,7 @@
     --cinza-escuro: #4B4B4D;
 }
 
+
 /* ============= Início da página principal ============= */
 /* alinhamento da pág principal */
 .pag-principal {
@@ -153,6 +154,7 @@ section#secao02 h2,
 #secao04 h2 {
     color: var(--font-color);
 }
+
 /*============= Fim da seção 2 =============*/
 /*============= Início da seção 5 - TABELA =============*/
 section#secao05 {
@@ -170,6 +172,7 @@ section#secao05 table th {
     font-size: 1.2em;
     color: var(--font-color);
 }
+
 /*============= Fim da seção 5 =============*/
 /*============= Início da seção 6 - BÔNUS =============*/
 section#secao06 .box-geral {
@@ -207,6 +210,7 @@ section#secao07 {
 section#secao07 p {
     font-size: 1.5em;
 }
+
 /*============= Fim da seção 7 =============*/
 /*============= Início da seção 8 - iframes mapa e vídeo =============*/
 section#secao08 .iframe {
@@ -218,4 +222,31 @@ section#secao08 .iframe {
 section#secao08 h2 {
     color: var(--font-color);
 }
-/*============= Fim da seção 8 =============*/
+
+/* ============= Fim da seção 8 =============*/
+
+/* ============= MOBILE DA PÁG HOME ============= */
+@media (max-width:991px) {
+    .pag-principal {
+        padding: 20% 3%;
+        padding-bottom: 6%;
+        font-size: 1.2em;
+    }
+
+    .galeria h1 {
+        font-size: 1.2em;
+    }
+
+    section#secao04 p,
+    section#secao07 p {
+        font-size: 1em;
+    }
+
+    section#secao08 iframe {
+        width: 100%;
+        /* padding: 0%; */
+    }
+
+    
+
+}

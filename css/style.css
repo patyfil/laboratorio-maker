@@ -14,6 +14,16 @@
     --cinza-escuro: #4B4B4D;
 }
 
+.corpo {
+    padding-top: 10%;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.corpo h1 {
+    color: var(--font-color);
+}
+
 /* "*" Irá corresponder a todos os elementos do documento. */
 * {
     font-family: "Atma", cursive, "Arial", "Helvetica", "sans-serif";
@@ -105,7 +115,6 @@ hr {
     /* translate reposiciona um elemento na direção horizontal e/ou vertical. 
     Suas coordenadas definem o quanto o elemento se move em cada direção. */
 }
-
 /* ================== FIM - Estilo padrão para todas as páginas ================== */
 /* ================== FORMATAÇÃO DO CABEÇALHO ================== */
 header {
@@ -147,7 +156,6 @@ header .logo {
 
 /* efeito nas âncoras */
 #nav a:hover {
-    color: red;
     border-bottom: .1em solid var(--hover-color);
 }
 
@@ -161,7 +169,6 @@ header .logo {
 #menu a {
     display: block;
     padding-inline: .1rem;
-    /* padding-right: 10%; */
 }
 
 #menu a:hover {
@@ -246,18 +253,35 @@ footer p {
 
 /*============= Início do media queries  =============*/
 @media (max-width:991px) {
+    /* Definindo as características dos parágrafos e listas dos itens */
 
-    html {
-        font-size: 75%;
+    li {
+        font-size: 1em;
     }
 
-    header {
-        font-size: 0.1em;
-        padding-right: 1%;
+    p {
+        font-size: 1em;
+    }
+
+    /* Definindo os tamanhos das fontes */
+    h1 {
+        font-size: 1.6em;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    h3 {
+        font-size: 1em;
     }
 
     section {
         padding: 2em;
+    }
+
+    section#corpo {
+        padding: 15% 2%;
     }
 
     header .logo {
@@ -266,7 +290,6 @@ footer p {
 
     header nav a {
         font-size: 90%;
-        /* text-decoration: none; */
     }
 
     /* MOBILE MENU */
@@ -280,7 +303,7 @@ footer p {
         background: var(--bordo);
         transition: 0.6s;
         z-index: 1000;
-        /* height: 0px; */
+        height: 0px;
         visibility: hidden;
         overflow-y: hidden;
     }
@@ -346,8 +369,9 @@ footer p {
         width: 80%;
     }
 
-    /* definição da fonte dos botões */
+    /* Mobile - definição da fonte dos botões */
     .button a {
+        /* width: 90%; */
         font-size: 1.5em;
     }
 
@@ -401,7 +425,7 @@ footer p {
 
     /* mobile - Alinhando o footer */
 
-    .partes {
+    footer .partes {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
@@ -409,7 +433,7 @@ footer p {
     }
 }
 
-@media (max-width:768px) {
+/* @media (max-width:768px) {
 
     header {
         font-size: 0.1em;
@@ -420,39 +444,7 @@ footer p {
         height: 50%;
     }
 
-    #menu-btn {
-        display: inline-block;
-    }
-
-    .header .navbar {
-        position: absolute;
-        top: 100%;
-        right: -100%;
-        background: var(--bordo);
-        width: 30rem;
-        height: calc(70vh - 9.5rem);
-        z-index: 2;
-    }
-
-    .header .navbar .active {
-        right: 10%;
-        z-index: 2;
-    }
-
-    .header .navbar a {
-        color: rgb(255, 255, 255);
-        display: block;
-        /* font-size: 100%; */
-        margin: 1.5rem;
-        padding: .5rem;
-        /* display: flex; */
-        /* flex-wrap: wrap; */
-        /* flex-flow: column wrap; */
-        z-index: 2;
-    }
-
-
-}
+} */
 
 @media (max-width:450px) {
 
