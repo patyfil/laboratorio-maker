@@ -247,8 +247,6 @@ section#secao08 h2 {
         font-size: 1.2em;
     }
 
-
-
     section#secao02,
     section#secao03,
     section#secao04,
@@ -334,4 +332,74 @@ section#secao08 h2 {
         /* width: 370px;
         margin-top: -20px; */
     }
+
+        /* MOBILE MENU */
+    
+        #menu {
+            display: block;
+            position: absolute;
+            width: 30%;
+            top: 80px;
+            right: 0px;
+            background: var(--bordo);
+            transition: 0.6s;
+            z-index: 1000;
+            height: 0px;
+            visibility: hidden;
+            overflow-y: hidden;
+        }
+    
+        #nav.active #menu {
+            height: calc(40vh - 70px);
+            visibility: visible;
+            overflow-y: auto;
+        }
+    
+        #menu a {
+            padding: 1rem 0;
+            margin: 0 1rem;
+            border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+        }
+    
+        #btn-mobile {
+            display: flex;
+            padding: 0.5rem 1rem;
+            font-size: 1.3em;
+            border: none;
+            background: none;
+            cursor: pointer;
+            gap: 0.5rem;
+        }
+    
+        #hamburger {
+            border-top: 4px solid;
+            width: 30px;
+        }
+    
+        #hamburger::after,
+        #hamburger::before {
+            content: '';
+            display: block;
+            width: 30px;
+            height: 4px;
+            background: currentColor;
+            margin-top: 7px;
+            transition: 0.3s;
+            position: relative;
+        }
+    
+        #nav.active #hamburger {
+            border-top-color: transparent;
+        }
+    
+        #nav.active #hamburger::before {
+            transform: rotate(135deg);
+        }
+    
+        #nav.active #hamburger::after {
+            transform: rotate(-135deg);
+            top: -10px;
+        }
+    
+        /* FIM DO MENU MOBILE*/
 }
