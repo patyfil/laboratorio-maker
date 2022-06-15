@@ -32,8 +32,12 @@
 
     /* mobile botão - aumentar a largura dos botões */
     .resposta {
-        margin-top: 10%;
+        margin: 10%;
+        padding: 0 5%;
         font-size: 1.2em;
+    }
+    .resposta h3 {
+        font-size: 0.8em;
     }
 
 }
