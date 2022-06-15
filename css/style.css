@@ -310,6 +310,7 @@ footer p {
     }
 
     #nav.active #menu {
+        padding-top: 4%;
         height: calc(40vh - 70px);
         visibility: visible;
         overflow-y: auto;
