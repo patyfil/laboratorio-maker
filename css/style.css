@@ -1,4 +1,4 @@
-/* ================== INÍCIO - Estilo padrão para todas as páginas ================== */
+/* ================== Estilo padrão para todas as páginas ================== */
 
 /* Usando a regra @import para importar a fonte do Google em CSS */
 @import url('https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&display=swap');
@@ -26,7 +26,7 @@
 
 /* "*" Irá corresponder a todos os elementos do documento. */
 * {
-    font-family: "Atma", cursive, "Arial", "Helvetica", "sans-serif";
+    font-family: "Atma", "cursive", "Georgia", "Helvetica", "sans-serif";
     font-size: 12pt;
     color: white;
     text-decoration: none;
@@ -50,17 +50,17 @@ p,
 li {
     font-size: 1.3em;
     /*15,6pt*/
-    font-family: "Atma Medium";
+    font-family: "Atma Medium", cursive;
 }
 
 /* Definindo a fonte dos títulos */
 h1,
 h2,
 h3 {
-    font-family: "Atma SemiBold";
+    font-family: "Atma SemiBold", cursive;
 }
 
-/* Definindo os tamanhos das fontes */
+/* Definindo o tamanho da fonte dos títulos */
 h1 {
     font-size: 1.8em;
     /*21pt*/
@@ -76,14 +76,14 @@ h3 {
     /*15,6pt*/
 }
 
-/* definição das linhas */
+/* definição da característica das linhas */
 hr {
     border: var(--border);
     width: 90%;
     margin: 5% auto;
 }
 
-/* definição das características dos botões */
+/* definição das características dos botões de realizar a inscrição */
 .button {
     background-color: var(--hover-color);
     display: inline-block;
@@ -93,7 +93,7 @@ hr {
     border-radius: 0.5em;
     box-shadow: 0.5em 0.5em 0.5em #999;
     cursor: pointer;
-    /*aparece a mãozinha quando passa o mouse em cima*/
+    /*cursor pointer aparece a mãozinha quando passa o mouse em cima*/
     border: none;
 }
 
@@ -110,12 +110,11 @@ hr {
 
 /* efeito do botão quando aperta */
 .button:active {
-    background-color: #847059;
+    background-color: var(--marrom);
     transform: translateY(8px);
     /* translate reposiciona um elemento na direção horizontal e/ou vertical. 
     Suas coordenadas definem o quanto o elemento se move em cada direção. */
 }
-
 /* ================== FIM - Estilo padrão para todas as páginas ================== */
 /* ================== FORMATAÇÃO DO CABEÇALHO ================== */
 header {
@@ -123,7 +122,7 @@ header {
     display: flex;
     /* Define o elemento como um flex container, tornando os seus filhos flex-itens. */
     justify-content: space-between;
-    /*espaço entre a logo e o menu*/
+    /*espaço entre os elementos*/
     border-bottom: var(--border);
     position: fixed;
     /*Fixar o menu na página*/
@@ -131,95 +130,95 @@ header {
     left: 0;
     right: 0;
     bottom: 88%;
-    /* Para definir a altura do header em 12% */
+    /* bottom para definir a altura do header/fundo em 12% */
     z-index: 1;
-    /* Para o menu sobrepor os slides de fotos quando rolar a página */
+    /* Para o menu sobrepor os slides de fotos quando rolar a página, 
+    o valor 1 define o grau de profundidade em relação aos outros que por padrão vem com valor 'auto'
+    quanto maior esse valor, mais se sobrepõe em relação aos outros de menor valor */
 }
 
 /* definições da logo do cabeçalho */
 header .logo {
     display: flex;
     align-self: center;
+    /* 'align-self' Centraliza verticalmente */
     height: 60%;
     padding: 1.3% 1.3%;
 }
 
 /* menu de navagação */
-/* Centraliza Horizontalmente os itens da lista do menu */
+/* Centraliza verticalmente os itens da lista do menu */
 #nav {
     align-self: center;
 }
 
-/* tag âncora links do menu */
+/* tag âncora - tamanho da fonte dos links do menu */
 #nav a {
     font-size: 1.2em;
 }
 
-/* efeito nas âncoras */
+/* efeito sublinhado quando passa o mouse nas âncoras */
 #nav a:hover {
     border-bottom: .1em solid var(--hover-color);
 }
 
+/* Características do menu */
 #menu {
     display: flex;
     list-style: none;
+    /* list-style - Retirar as bolinhas das listas */
     gap: 3.5rem;
+    /* gap - Distância entre os itens do menu */
     padding-right: 40px;
 }
 
-#menu a {
-    display: block;
-    padding-inline: .1rem;
-}
-
+/* efeito de cor quando passa o mouse nas âncoras */
 #menu a:hover {
     color: var(--hover-color);
 }
 
-/* Menu Sanduíche fica escondido quando está na tela de computador/WideScreen*/
+/* Menu Sanduíche fica escondido quando está na tela de computador e aparece quando numa tela menor */
 #btn-mobile {
     display: none;
 }
-
 /*============= Fim do Header =============*/
 
 /*============= Início Footer =============*/
-
+/* Definindo fundo do rodapé com uma imagem */
 footer {
-    display: flexbox;
     background-image: url(../img/fundo.jpg);
-    grid-area: rodape;
     text-align: left;
+    /* centralizando */
     width: 100%;
+    /* ocupando toda largura da página */
 }
-
+/* Definindo 'contato', 'endereço' e 'horário' */
 footer .partes {
     display: flex;
-    flex-wrap: wrap;
+    /* flex para dividir em 3 partes horizontais */
     justify-content: space-around;
     padding: 10px;
 }
-
+/* Definindo a cor do h2 */
 footer h2 {
     color: var(--font-color);
 }
-
+/* Definindo a cor do span */
 footer span {
     color: var(--hover-color);
 }
-
+/* Diminuindo o tamanho do parágrafo */
 footer p {
     font-size: 1em;
 }
-
+/* Configurando a última linha do footer */
 .copyright {
-    color: #fff;
     padding: .5em;
     text-align: center;
 }
 
 /* Início Redes Sociais do Footer */
-/* Alinha os icones das redes sociais dentro da bola */
+/* Alinhando os icones das redes sociais dentro do círculo */
 .redes {
     text-align: center;
     width: 100%;
@@ -227,7 +226,7 @@ footer p {
     padding: 0%;
 }
 
-/* share é a class da div */
+/* share é a class da seção redes */
 /* Criando e Posicionando os Cícurlos a partir dos Links(a) que estão dentro da div de class=share */
 .redes .share a {
     height: 2em;
@@ -245,16 +244,12 @@ footer p {
 .redes .share a:hover {
     background-color: var(--bordo);
 }
-
 /* Fim das Redes Sociais do Footer */
+/* ========================== Fim do Footer ========================== */
 
-
-
-/*============= Fim do Footer =============*/
-
-/*============= Início do media queries  =============*/
+/* ========================== Início do media queries - RESPONSIVIDADE PARA CELULAR ==========================*/
 @media (max-width:991px) {
-    /* Definindo as características dos parágrafos e listas dos itens */
+    /* Definindo o tamanho das fontes padrão */
 
     li {
         font-size: 1em;
@@ -264,7 +259,6 @@ footer p {
         font-size: 1em;
     }
 
-    /* Definindo os tamanhos das fontes */
     h1 {
         font-size: 1.6em;
     }
@@ -276,24 +270,20 @@ footer p {
     h3 {
         font-size: 1em;
     }
-
+    /* Definindo o padding das sections */
     section {
         padding: 2em;
     }
-
+    /* Definindo o padding da seção corpo que é maior */
     section#corpo {
         padding: 15% 2%;
     }
-
+    /* Reduzindo o tamanho do logo no cabeçalho */
     header .logo {
         height: 60%;
     }
 
-    header nav a {
-        font-size: 90%;
-    }
-
-    /* MOBILE MENU */
+    /* ========================== MOBILE MENU ========================== */
 
     #menu {
         display: block;
@@ -303,23 +293,24 @@ footer p {
         right: 0px;
         background: var(--bordo);
         transition: 0.6s;
-        z-index: 1000;
+        z-index: 10;
         height: 0px;
         visibility: hidden;
         overflow-y: hidden;
+        line-height: 300%;
     }
-
+    /* Quando o menu sanduíche for clicado a 'barra bordo' terá as seguintes caract: */
     #nav.active #menu {
-        padding-top: 4%;
+        padding-top: 10%;
         height: calc(40vh - 70px);
         visibility: visible;
         overflow-y: auto;
     }
 
     #menu a {
-        padding: 1rem 0;
+        
         margin: 0 1rem;
-        border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+        border-bottom: 2px solid rgba(209, 147, 14, 0.10);
     }
 
     #btn-mobile {

@@ -1,3 +1,7 @@
+/* ================== Estilo para a página Contato ================== */
+
+/* Usando a regra @import para importar a fonte do Google em CSS */
+@import url('https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&display=swap');
 /* root é para declarar uma variável */
 :root {
     --hover-color: #D1930E;
