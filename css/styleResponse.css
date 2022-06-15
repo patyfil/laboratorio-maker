@@ -12,8 +12,7 @@
     --bordo: #5E2939;
     --cinza-escuro: #4B4B4D;
 }
-
-/* o id corpo terá um padding-top de 10% para não ficar atras do header */
+/* Formatando a página resposta */
 .resposta {
     height: 60vh;
     margin-top: 7%;
@@ -21,24 +20,23 @@
     text-align: center;
     font-size: 1.5em;
 }
-
+/* Formatando a cor do h3 da página resposta */
 .resposta h3 {
     color: var(--font-color);
 }
-
+/* Formatando a imagem do WhatsApp */
 .resposta img {
-    bottom: 40px;
     width: 80px;
     height: 80px;
 }
 
 @media (max-width:991px) {
 
-    /* mobile botão - aumentar a largura dos botões */
     .resposta {
         margin-top: 25%;
-        padding: 0 5%;
+        padding: 0 8%;
         font-size: 1.2em;
+        line-height: 200%;
     }
     .resposta h3 {
         font-size: 0.8em;

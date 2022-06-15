@@ -297,7 +297,7 @@ footer p {
         height: 0px;
         visibility: hidden;
         overflow-y: hidden;
-        line-height: 300%;
+        line-height: 400%;
     }
     /* Quando o menu sanduíche for clicado a 'barra bordo' terá as seguintes caract: */
     #nav.active #menu {
@@ -306,13 +306,13 @@ footer p {
         visibility: visible;
         overflow-y: auto;
     }
-
+    /* Efeito sublinhado embaixo dos links */
     #menu a {
-        
         margin: 0 1rem;
         border-bottom: 2px solid rgba(209, 147, 14, 0.10);
     }
 
+    /* Botão escrito 'MENU' ao lado do hamburger/X */    
     #btn-mobile {
         display: flex;
         padding: 0.5rem 2rem;
@@ -322,12 +322,13 @@ footer p {
         cursor: pointer;
         gap: 0.5rem;
     }
-
+    /* 1ª linha do Menu sanduíche, que desaparece quando ele é clicado */
     #hamburger {
         border-top: 6px solid;
         width: 40px;
     }
-
+    /* after é a linha que vem depois e before a linha que vai antes do menu 
+    São as linhas que vão formar o X quando o menu for clicado */
     #hamburger::after,
     #hamburger::before {
         content: '';
@@ -335,47 +336,44 @@ footer p {
         width: 40px;
         height: 6px;
         background: currentColor;
-        margin-top: 7px;
+        margin-top: 6px;
         transition: 0.3s;
         position: relative;
     }
 
+    /* escondendo a 1ª linha do menu sanduíche qdo ele é clicado */
     #nav.active #hamburger {
         border-top-color: transparent;
     }
-
+    /* Formando X qdo o sanduíche é clicado */
     #nav.active #hamburger::before {
         transform: rotate(135deg);
     }
 
     #nav.active #hamburger::after {
         transform: rotate(-135deg);
-        top: -10px;
+        top: -12px;
     }
+    /* ========================== FIM DO MENU MOBILE ========================== */
 
-    /* FIM DO MENU MOBILE*/
-
-
-
-    /* mobile botão - aumentar a largura dos botões */
+    /* Mobile botão - aumentar a largura dos botões */
     .button {
         width: 80%;
     }
 
     /* Mobile - definição da fonte dos botões */
     .button a {
-        /* width: 90%; */
         font-size: 1.5em;
     }
 
-    /* mobile - Alinhando o footer */
+    /* Mobile - Alinhando o footer para quebrar as 3 partes e ficar em 1 coluna */
     footer .partes {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
         align-content: center;
     }
-
+    /* Mobile - padding em volta dos círculos */
     footer .share {
         padding: 2%;
     }

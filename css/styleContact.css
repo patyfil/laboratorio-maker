@@ -16,30 +16,24 @@
 
 
 /* ==================== Formatação do formulário ==================== */
-
+/* Formatação do fundo do formulário */
 .contact .row {
-    display: flex;
-    max-width: 100%;
     background-color: var(--cor-form);
     border-radius: 20px;
-    flex-wrap: wrap;
-    gap: 1em;
     margin-bottom: 10%;
 
 }
-
+/* Formatação do formulário */
 .contact .row form {
-    flex: 1 1 4rem;
     padding: 5rem 2rem;
     text-align: center;
 }
-
+/* Formatação do título/legenda do formulário */
 .contact .row form legend {
     text-transform: uppercase;
     font-size: 1.5em;
-    color: #fff;
 }
-
+/* Formatação dos campos do formulário */
 .contact .row form .inputBox {
     display: flex;
     align-items: center;
@@ -48,28 +42,27 @@
     background: black;
     border: var(--border);
 }
-
+/* Formatação dos ícones do formulário */
 .contact .row form .inputBox span {
     color: var(--font-color);
     font-size: 2rem;
     padding-left: 2rem;
 }
-
+/* Formatação dos inputs do formulário */
 .contact .row form .inputBox input {
     width: 100%;
     padding: 1em;
     font-size: 1.3em;
-    /* color: #fff; */
     text-transform: none;
     background: none;
 }
 
-/* tirar a borda padrão do input */
+/* tirar a borda padrão do input e do textarea */
 .contact input,
 textarea {
     border: none;
 }
-
+/* Formatação do textarea */
 textarea {
     height: 150px;
     width: 100%;
@@ -77,12 +70,12 @@ textarea {
     padding: 2rem;
     font-size: 1.2em;
 }
-
+/* Formatação do texto do checkbox */
 .notificacao {
     font-size: 1.2em;
     text-align: initial;
 }
-
+/* Diminuindo um pouco o botão e os efeitos */
 .button {
     font-size: 1.7em;
     box-shadow: 0.3em 0.3em 0.3em #999;
