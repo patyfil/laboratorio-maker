@@ -26,7 +26,7 @@
 
 /* "*" Irá corresponder a todos os elementos do documento. */
 * {
-    font-family: "Atma", "cursive", "Arial", "Helvetica", "sans-serif";
+    font-family: "Atma", cursive, "Arial", "Helvetica", "sans-serif";
     font-size: 12pt;
     color: white;
     text-decoration: none;
@@ -115,6 +115,7 @@ hr {
     /* translate reposiciona um elemento na direção horizontal e/ou vertical. 
     Suas coordenadas definem o quanto o elemento se move em cada direção. */
 }
+
 /* ================== FIM - Estilo padrão para todas as páginas ================== */
 /* ================== FORMATAÇÃO DO CABEÇALHO ================== */
 header {
@@ -375,61 +376,15 @@ footer p {
         font-size: 1.5em;
     }
 
-    section#galeria .content {
-        display: block;
-        background-size: cover;
-        width: 100%;
-        position: absolute;
-        top: 180%;
-        left: 50%;
-        font-size: small;
-    }
-
-    /* section#galeria .content {
-        height: 520px;
-        width: 935px;
-        border-radius: 20px;
-        overflow: hidden;
-        position: absolute;
-        top: 140%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    } */
-
-    /* mobile seção 05 - tabela */
-    section#secao05 {
-        padding: 2% 2%;
-    }
-
-    section#secao05 tr {
-        font-size: 12px;
-    }
-
-    /* mobile seção 06 - sorteio bônus */
-    section#secao06 .box-geral {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    /* mobile 07 - posicionar as setas para não ultrapassar a página */
-    section#secao07 img {
-        width: 100%;
-    }
-
-    /* mobile seção 08 - iframes para centralizar e quebrar conforme a tela */
-    section#secao08 .iframe {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
     /* mobile - Alinhando o footer */
-
     footer .partes {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
         align-content: center;
+    }
+    footer .share {
+        padding: 2%;
     }
 }
 
