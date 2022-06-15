@@ -26,7 +26,7 @@
 
 /* "*" Irá corresponder a todos os elementos do documento. */
 * {
-    font-family: "Atma", cursive, "Arial", "Helvetica", "sans-serif";
+    font-family: "Atma", "cursive", "Arial", "Helvetica", "sans-serif";
     font-size: 12pt;
     color: white;
     text-decoration: none;
