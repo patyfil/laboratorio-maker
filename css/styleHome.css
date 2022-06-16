@@ -2,6 +2,7 @@
 
 /* Usando a regra @import para importar a fonte do Google em CSS */
 @import url('https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&display=swap');
+
 /* root é para declarar uma variável */
 :root {
     --hover-color: #D1930E;
@@ -14,7 +15,7 @@
 }
 
 
-/* ============= Início da página principal ============= */
+/* ========================== Início da página principal ========================== */
 /* alinhamento da pág principal */
 #corpo .pag-principal {
     padding-top: 10%;
@@ -29,7 +30,7 @@
 }
 
 /* Fim da página principal */
-/*============= Início do Slide de fotos =============*/
+/* ========================== Início do Slide de fotos ========================== */
 /* container para centralizar a galeria sem distorcer as imagens */
 .container-galeria {
     display: flex;
@@ -37,41 +38,47 @@
     align-items: center;
 }
 
+/* Formatando o h1 da galeria */
 #galeria h1 {
     color: var(--font-color);
     text-align: center;
     font-size: 1.5em;
 }
 
+/* Definindo o tamanho e borda dos slides */
 .slider {
     width: 800px;
     height: 500px;
     border-radius: 10px;
     overflow: hidden;
+    /* 'overflow: hidden' Para esconder as outras fotos e as bordas */
 }
 
+/* Deixar as imagens lado a lado */
 .slides {
     width: 500%;
     height: 500px;
     display: flex;
 }
 
+/* Esconder as bolinhas */
 .slides input {
     display: none;
 }
 
+/* Efeito de transição entre as imagens */
 .slide {
     width: 20%;
     transition: 2s;
 }
 
+/* Tamanho da imagen */
 .slide img {
     width: 800px;
     height: 500px;
 }
 
 /*navegação manual*/
-
 .navigation-manual {
     position: absolute;
     width: 800px;
@@ -80,6 +87,7 @@
     justify-content: center;
 }
 
+/* navegação manual - círculo bordo */
 .manual-btn {
     border: 2px solid var(--bordo);
     padding: 5px;
@@ -88,14 +96,17 @@
     transition: 1s;
 }
 
+/* Espaçamento entre os círculos bordos */
 .manual-btn:not(:last-child) {
     margin-right: 40px;
 }
 
+/* Efeito marrom no círculo qdo passa o mouse */
 .manual-btn:hover {
     background: var(--marrom);
 }
 
+/* Distância percorrida pela img qdo o círculo está ativo */
 #radio1:checked~.first {
     margin-left: 0;
 }
@@ -112,8 +123,7 @@
     margin-left: -60%;
 }
 
-/*navegação automática*/
-
+/*navegação automática - círculos amarelos */
 .navigation-auto {
     position: absolute;
     display: flex;
@@ -122,6 +132,7 @@
     margin-top: 460px;
 }
 
+/* Preenchimento do círculo amarelo com a cor amarela */
 .navigation-auto div {
     border: 2px solid var(--font-color);
     padding: 5px;
@@ -129,10 +140,12 @@
     transition: 1s;
 }
 
+/* Distância entre os círculos amarelos */
 .navigation-auto div:not(:last-child) {
     margin-right: 40px;
 }
 
+/* Variável que é usada pelo JavaScript para troca de fotos */
 #radio1:checked~.navigation-auto .auto-btn1 {
     background: var(--font-color);
 }
@@ -149,10 +162,9 @@
     background: var(--font-color);
 }
 
-/*============= Fim do Slide de fotos =============*/
+/*========================== Fim do Slide de fotos ==========================*/
 
-
-/* ============= Início da seção 2 - OBJETIVOS ============= */
+/* ================= Início da seção 2 - OBJETIVOS ================= */
 /* Definições do h1: "O EVENTO" */
 section#secao02 h1 {
     font-size: 2em;
@@ -167,14 +179,16 @@ section#secao02 h2,
     color: var(--font-color);
 }
 
-/*============= Fim da seção 2 =============*/
+/*========================== Fim da seção 2 ==========================*/
 
-/* ============= Seção 04 ============= */
+/* ========================== Início da Seção 04 ========================== */
 #secao04 p {
     font-size: 1.3em;
 }
 
+/* ========================== Fim da Seção 04 ========================== */
 /*============= Início da seção 5 - TABELA =============*/
+/* Definindo a posição da tabela na tela */
 section#secao05 {
     display: grid;
     padding: 2% 10%;
@@ -193,12 +207,15 @@ section#secao05 table th {
 
 /*============= Fim da seção 5 =============*/
 /*============= Início da seção 6 - BÔNUS =============*/
+/* div necessária para deixar os quadrados/borda do mesmo tamanho
+independente do tamanho das imagens */
 section#secao06 .box-geral {
     text-align: center;
     display: flex;
     justify-content: center;
 }
 
+/* Definindo as características do quadrado amarelo */
 section#secao06 .box {
     border: var(--border);
     border-radius: 5%;
@@ -208,16 +225,19 @@ section#secao06 .box {
     margin: 1em;
 }
 
+/* Alinhando o h1 */
 section#secao06 h1 {
     text-align: center;
 }
 
+/* alterando cor do h3 */
 section#secao06 h3 {
     color: var(--font-color);
 }
 
 /*============= Fim da seção 6 =============*/
 /*============= Início da seção 7 - call to action - Preencher Formulário =============*/
+/* Definindo a tela e posição dos elementos na tela */
 section#secao07 {
     height: 100%;
     padding-top: 1%;
@@ -225,18 +245,26 @@ section#secao07 {
     text-align: center;
 }
 
+/* Alterando tamanho da fonte do parágrafo */
 section#secao07 p {
     font-size: 1.5em;
 }
 
 /*============= Fim da seção 7 =============*/
-/*============= Início da seção 8 - iframes mapa e vídeo =============*/
-section#secao08 .iframe {
-    display: flex;
-    justify-content: space-evenly;
-    padding-bottom: 4%;
+/*============= Início da seção 8 - iframes: mapa e vídeo =============*/
+/* Definindo um padding para não encostar um iframe no outro */
+section#secao08 {
+    padding: 2%;
 }
 
+/* Colocando lado a lado e colocando espaço entre os iframes */
+section#secao08 .iframe {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 6%;
+}
+
+/* Definindo a cor do h2 */
 section#secao08 h2 {
     color: var(--font-color);
 }
@@ -286,17 +314,19 @@ section#secao08 h2 {
         width: 100%;
     }
 
-    /* mobile seção 08 - iframes para centralizar e quebrar conforme a tela */
+    /* Definindo a largura dos iframes */
     section#secao08 iframe {
-        width: 100%;
+        width: 400px;
+        
     }
-
+    /* mobile seção 08 - iframes para centralizar e quebrar conforme a tela */
     section#secao08 .iframe {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
 
+    /* MOBILE - Seção galeria de fotos */
     .container-galeria {
         width: 100%;
         display: block;
