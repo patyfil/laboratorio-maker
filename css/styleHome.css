@@ -260,7 +260,7 @@ section#secao08 {
 /* Colocando lado a lado e colocando espaço entre os iframes */
 section#secao08 .iframe {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding-bottom: 6%;
 }
 
