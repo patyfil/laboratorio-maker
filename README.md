@@ -1,24 +1,19 @@
 <p align="left">Veja o Site:</p>https://laboratorio-maker.netlify.app/
-<<<<<<< HEAD
-
-###
-=======
->>>>>>> origin
 
 ###
 <h1 align="left">Curso Programador Web 216h - Qualifica Mais Emprega Mais</h1>
 
 ###
-<<<<<<< HEAD
+
 
 <p align="left">Professora Luciana Schmitz</p>
 
 ###
 
 <p align="left">Projeto final da Disc.5 - Linguagem HTML, CSS e JavaScript</p>
-=======
+
 <p align="left">Professora Luciana Schmitz</p>
->>>>>>> origin
+
 
 ###
 <p align="left">Projeto final da Disc.5 - Linguagem HTML, CSS e JavaScript</p>
@@ -37,8 +32,5 @@
   <img height="200" src="https://www.gov.br/mec/pt-br/qualificamais/midias/banner_principal.png"  />
 </div>
 
-<<<<<<< HEAD
 ###
-=======
-###
->>>>>>> origin
+
