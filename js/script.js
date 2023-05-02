@@ -20,29 +20,6 @@ btnMobile.addEventListener("click", toggleMenu);
 btnMobile.addEventListener("touchstart", toggleMenu);
 
 // ********************* scripts da galeria de fotos *********************
-// variável para o contador que soma +1 a cada laço, se o contador for maior que 4, fecha o laço e retorna
-// var counter = 1;
-// setInterval(function () {
-//   document.getElementById("radio" + counter).checked = true;
-//   counter++;
-//   if (counter > 4) {
-//     counter = 1;
-//   }
-// }, 4000);
-
-
-// ********* scripts para capturar o nome e imprimir na página resposta **********
-// essa não consegui fazer funcionar ainda prof rsrs, tenho que descobrir como imprimir em outro html
-var capturando = "";
-
-function capturar() {
-  capturando = document.getElementById('name').value;
-  document.getElementById('../resposta.html#valorDigitado').innerHTML = capturando;
-  localStorage.setItem('valorDigitado', capturando);
-}
-
-
-// ********************* scripts da galeria de fotos *********************
 const carousel = document.querySelector('.carousel');
 const images = carousel.querySelectorAll('img');
 const indicators = document.querySelectorAll('.indicator');
@@ -79,3 +56,13 @@ indicators.forEach((indicator, i) => {
     indicators[index].classList.add('active');
   });
 });
+
+// ********* scripts para capturar o nome e imprimir na página resposta **********
+// essa não consegui fazer funcionar ainda prof rsrs, tenho que descobrir como imprimir em outro html
+var capturando = "";
+
+function capturar() {
+  capturando = document.getElementById('name').value;
+  document.getElementById('../resposta.html#valorDigitado').innerHTML = capturando;
+  localStorage.setItem('valorDigitado', capturando);
+}
