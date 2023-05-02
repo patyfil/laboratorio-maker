@@ -211,14 +211,12 @@ footer {
 footer .partes {
     display: flex;
     /* flex para dividir em 3 partes horizontais */
-    /* justify-content: center; */
+    justify-content: space-around;
+    padding: 10px;
 }
 /* Definindo a cor do h2 */
 footer h2 {
-    display: inline-block;
     color: var(--font-color);
-    text-align: left;
-    margin: 20px 0;
 }
 /* Definindo a cor do span */
 footer span {
@@ -265,7 +263,7 @@ footer p {
 
 /* Configurando a última linha do footer */
 .copyright {
-    padding: .5em;
+    padding: 1em;
     text-align: center;
 }
 
@@ -396,12 +394,26 @@ footer p {
         flex-wrap: wrap;
         flex-direction: column;
         align-content: center;
+        justify-content: center;
+
     }
+
+    /* Definindo a cor do h2 */
+    footer h2 {
+        display: inline-block;
+    }
+
     /* Mobile - padding em volta dos círculos */
     footer .share {
         padding: 2%;
     }
+
+    /* Configurando a última linha do footer */
+    .copyright {
+        padding: 2em;
+    }
 }
+
 
 @media (max-width:768px) {
 
