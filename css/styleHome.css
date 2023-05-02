@@ -38,137 +38,60 @@
 }
 
 /* Fim da página principal */
+
 /* ========================== Início do Slide de fotos ========================== */
-/* container para centralizar a galeria sem distorcer as imagens */
-.container-galeria {
+/* Estilos para o carrossel */
+.carousel-container {
+    position: relative;
+    width: 50%;
+    max-width: 1200px;
+    margin: 50px auto 20px;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .carousel {
+    display: flex;
+    width: 400%;
+    transition: transform 2s ease-in-out;
+    transform: translateX(-25%);
+    flex-shrink: 0;
+  }
+  
+  .carousel img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Estilos para o indicador */
+  .indicator-container {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-/* Formatando o h1 da galeria */
-#galeria h1 {
-    color: var(--font-color);
-    text-align: center;
-    font-size: 1.5em;
-}
-
-/* Definindo o tamanho e borda dos slides */
-.slider {
-    width: 800px;
-    height: 500px;
-    border-radius: 10px;
-    overflow: hidden;
-    /* 'overflow: hidden' Para esconder as outras fotos e as bordas */
-}
-
-/* Deixar as imagens lado a lado */
-.slides {
-    width: 500%;
-    height: 500px;
-    display: flex;
-}
-
-/* Esconder as bolinhas */
-.slides input {
-    display: none;
-}
-
-/* Efeito de transição entre as imagens */
-.slide {
-    width: 20%;
-    transition: 2s;
-}
-
-/* Tamanho da imagen */
-.slide img {
-    width: 800px;
-    height: 500px;
-}
-
-/*navegação manual*/
-.navigation-manual {
-    position: absolute;
-    width: 800px;
-    margin-top: -40px;
-    display: flex;
-    justify-content: center;
-}
-
-/* navegação manual - círculo bordo */
-.manual-btn {
-    border: 2px solid var(--bordo);
-    padding: 5px;
-    border-radius: 10px;
+    margin-top: 10px;
+  }
+  
+  .indicator {
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    margin: 0 5px;
     cursor: pointer;
-    transition: 1s;
-}
-
-/* Espaçamento entre os círculos bordos */
-.manual-btn:not(:last-child) {
-    margin-right: 40px;
-}
-
-/* Efeito marrom no círculo qdo passa o mouse */
-.manual-btn:hover {
-    background: var(--marrom);
-}
-
-/* Distância percorrida pela img qdo o círculo está ativo */
-#radio1:checked~.first {
-    margin-left: 0;
-}
-
-#radio2:checked~.first {
-    margin-left: -20%;
-}
-
-#radio3:checked~.first {
-    margin-left: -40%;
-}
-
-#radio4:checked~.first {
-    margin-left: -60%;
-}
-
-/*navegação automática - círculos amarelos */
-.navigation-auto {
-    position: absolute;
+  }
+  
+  .indicator.active {
+    background-color: #333;
+  }
+  
+  
+  /* Posiciona a div das bolinhas abaixo do container do carrossel */
+  .indicator-container {
     display: flex;
     justify-content: center;
-    width: 800px;
-    margin-top: 460px;
-}
-
-/* Preenchimento do círculo amarelo com a cor amarela */
-.navigation-auto div {
-    border: 2px solid var(--font-color);
-    padding: 5px;
-    border-radius: 10px;
-    transition: 1s;
-}
-
-/* Distância entre os círculos amarelos */
-.navigation-auto div:not(:last-child) {
-    margin-right: 40px;
-}
-
-/* Variável que é usada pelo JavaScript para troca de fotos */
-#radio1:checked~.navigation-auto .auto-btn1 {
-    background: var(--font-color);
-}
-
-#radio2:checked~.navigation-auto .auto-btn2 {
-    background: var(--font-color);
-}
-
-#radio3:checked~.navigation-auto .auto-btn3 {
-    background: var(--font-color);
-}
-
-#radio4:checked~.navigation-auto .auto-btn4 {
-    background: var(--font-color);
-}
+    align-items: center;
+    margin-top: 10px;
+  }
+  
 
 /*========================== Fim do Slide de fotos ==========================*/
 
@@ -277,6 +200,14 @@ section#secao08 h2 {
     color: var(--font-color);
 }
 
+.esq, .dir {
+    justify-content: center;
+}
+
+section#secao08 iframe {
+    border: var(--border);
+}
+
 /* ============= Fim da seção 8 =============*/
 
 /* ============= MOBILE DA PÁG HOME ============= */
@@ -286,6 +217,12 @@ section#secao08 h2 {
         padding-bottom: 6%;
         font-size: 1.2em;
     }
+
+    /* MOBILE - Seção galeria de fotos */
+    .carousel-container {
+        width: 100%;
+    }
+
 
     section#secao02,
     section#secao03,
@@ -325,57 +262,20 @@ section#secao08 h2 {
     /* Definindo a largura dos iframes */
     section#secao08 iframe {
         width: auto;
-        
     }
+
     /* mobile seção 08 - iframes para centralizar e quebrar conforme a tela */
     section#secao08 .iframe {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 1%;
+        gap: 2%;
     }
-
-    /* MOBILE - Seção galeria de fotos */
-    .container-galeria {
-        width: 100%;
-        display: block;
-        align-items: center;
-        height: 5%;
-    }
-
-    section#galeria {
-        padding: 0%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .slider {
-        width: 55%;
-        height: 55%;
-        padding: 0%;
-    }
-
-    .slides {
-        height: 40vh;
-    }
-
-    .slides img {
-        width: 80vh;
-        height: 50vh;
-    }
-
-    .navigation-auto {
-        /* display: none; */
-        width: 350px;
-        margin-top: 235px;
-    }
-
-    .navigation-manual {
-        display: none;
-        /* width: 220px;
-        margin-top: -30px; */
-    }
-}
 
 /* ============= MOBILE DA PÁG HOME ============= */
+    /* MOBILE - Seção galeria de fotos */
+    @media (max-width:768px) {
+    .container-galeria {
+        width: 80%;
+    }
+}

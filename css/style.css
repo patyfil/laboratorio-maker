@@ -34,7 +34,7 @@
 /* "*" Irá corresponder a todos os elementos do documento. */
 * {
     font-family: "Atma", "sans-serif";
-    font-size: 12pt;
+    font-size: 16px;
     color: white;
     text-decoration: none;
     transition: .2s linear;
@@ -52,10 +52,6 @@ section {
     flex-direction: rown;
     padding: 0 1%;
     width: auto;
-}
-
-.esq, .dir {
-    justify-content: center;
 }
 
 /* Definindo as características dos parágrafos e listas dos itens */
@@ -133,6 +129,7 @@ hr {
 /* ================== FIM - Estilo padrão para todas as páginas ================== */
 /* ================== FORMATAÇÃO DO CABEÇALHO ================== */
 header {
+    width: 100%;
     background-image: url(../img/fundo.jpg);
     display: flex;
     /* Define o elemento como um flex container, tornando os seus filhos flex-itens. */
@@ -372,16 +369,6 @@ footer p {
     }
     /* ========================== FIM DO MENU MOBILE ========================== */
 
-    .container-galeria{
-        display: flex;
-    }
-
-    #secao08 .iframe{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
     /* Mobile botão - aumentar a largura dos botões */
     .button {
         width: 80%;
@@ -434,9 +421,9 @@ footer p {
     }
 }
 
-@media (max-width:450px) {
+@media (max-width:250px) {
 
     html {
-        font-size: 50%;
+        font-size: 12px;
     }
 }
