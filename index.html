@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-	<!-- Início do cabeçalho do documento/Características da página -->
-
 	<head>
-		<!-- Título da Página -->
 		<title>Inauguração do Laboratório Maker</title>
 		<!-- Metas -->
 		<meta charset="UTF-8" />
@@ -22,21 +19,15 @@
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
 			/>
 		<!-- Fontes -->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link
 			href="https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&display=swap"
 			rel="stylesheet">
 	</head>
-	<!-- Fim do cabeçalho do documento -->
-	<!--Início do corpo do documento-->
 
 	<body>
-		<!-- Início do cabeçalho do documento/parte visível -->
 		<header id="header">
 			<a class="logo" href="index.html"><img src="img/logo-horiz2.png" alt='Logo do
 					laboratório Maker'></a>
-			<!-- início do navbar -->
 			<nav id="nav">
 				<!--Início Menu Sanduíche para tela mobile-->
 				<button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true"
@@ -51,8 +42,6 @@
 					<li><a href="contato.html">Contato</a></li>
 				</ul>
 			</nav>
-			<!-- Fim do navbar -->
-			<!--Final do cabeçalho da página-->
 		</header>
 		<!--Início da página Inicial-->
 		<section id="corpo">
@@ -88,7 +77,6 @@
 							<span class="indicator"></span>
 							<span class="indicator"></span>
 						</div>
-
 						<!-- Fim do SlideShow -->
 					</section>
 
@@ -233,27 +221,31 @@
 						<div class="iframe">
 							<div class="esq">
 								<h2>LOCALIZAÇÃO DO EVENTO</h2>
-								<iframe width="450" height="281"
-									src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3534.1007597526022!2d-48.70587358439508!3d-27.65235413111738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x952735b6e3380de1%3A0x677810ca703989a3!2sTerra%20Nova%20Palho%C3%A7a%20-%20Etapa%202!5e0!3m2!1spt-BR!2sbr!4v1653706699038!5m2!1spt-BR!2sbr"
-									allowfullscreen=""
-									loading="lazy"
-									referrerpolicy="no-referrer-when-downgrade"></iframe>
+								<div class="map">
+									<iframe
+										src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3534.1007597526022!2d-48.70587358439508!3d-27.65235413111738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x952735b6e3380de1%3A0x677810ca703989a3!2sTerra%20Nova%20Palho%C3%A7a%20-%20Etapa%202!5e0!3m2!1spt-BR!2sbr!4v1653706699038!5m2!1spt-BR!2sbr"
+										allowfullscreen=""
+										loading="lazy"
+										referrerpolicy="no-referrer-when-downgrade"></iframe>
+								</div>
 							</div>
 							<div class="dir">
 								<h2>VÍDEO INSTITUCIONAL</h2>
-								<iframe width="450" height="281"
-									src="https://www.youtube.com/embed/E-y5gTL3iTw"
-									title="YouTube video player" frameborder="0"
-									allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-									gyroscope; picture-in-picture"
-									allowfullscreen></iframe>
+								<div id="player">
+									<iframe src="https://www.youtube.com/embed/E-y5gTL3iTw"
+										title="YouTube video player" frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+										gyroscope; picture-in-picture"
+										crossorigin
+										allowfullscreen>
+									</iframe>
+								</div>
 							</div>
 						</div>
 					</section>
 				</section>
 
 				<footer>
-					<!--Conteúdo do rodapé-->
 					<div class="partes">
 						<div class="parte1">
 							<h2>Contato</h2>
@@ -306,6 +298,15 @@
 				</footer>
 				<!-- Link do arquivo js  -->
 				<script src="js/script.js"></script>
+				<!-- Api do youtube -->
+				<script src="https://www.youtube.com/iframe_api"></script>
+				<script
+					src="https://apis.google.com/js/api.js?key=AIzaSyDIidWKVwMO3Bz1bIAjXdJoVarxj2in0zk">
+				</script>
+				<!-- Api do Google Maps -->
+				<script
+					src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqW9H4Oat902sx2US8XdAHrQJjUkHegWQ">
+				</script>
 			</body>
 
 		</html>

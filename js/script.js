@@ -58,11 +58,54 @@ indicators.forEach((indicator, i) => {
 });
 
 // ********* scripts para capturar o nome e imprimir na página resposta **********
-// essa não consegui fazer funcionar ainda prof rsrs, tenho que descobrir como imprimir em outro html
 var capturando = "";
 
 function capturar() {
   capturando = document.getElementById('name').value;
   document.getElementById('../resposta.html#valorDigitado').innerHTML = capturando;
   localStorage.setItem('valorDigitado', capturando);
+}
+
+
+
+
+// ********* API DO YOUTUBE *********
+// função para criar o mapa
+function initMap() {
+  const map = new google.maps.Map(document.querySelector('.map iframe'), {
+    center: { lat: -27.65235413111738, lng: -48.70587358439508 },
+    zoom: 16,
+    disableDefaultUI: true,
+    styles: [
+      {
+        featureType: 'poi',
+        stylers: [{ visibility: 'off' }],
+      },
+    ],
+  });
+}
+
+// função para criar o player de vídeo
+function onYouTubeIframeAPIReady() {
+  const player = new YT.Player('player', {
+    height: '360',
+    width: '640',
+    videoId: 'E-y5gTL3iTw',
+    playerVars: {
+      autoplay: 0,
+      controls: 1,
+      disablekb: 1,
+      modestbranding: 1,
+      playsinline: 1,
+      rel: 0,
+      showinfo: 0,
+    },
+    events: {
+      onReady: onPlayerReady,
+    },
+  });
+}
+
+function onPlayerReady(event) {
+  event.target.playVideo();
 }

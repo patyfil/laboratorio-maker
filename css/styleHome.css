@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&display=swap');
 
 /* variáveis root */
-@import url('variaveis.css');
+@import url('style.css');
 
 /* ========================== Início da página principal ========================== */
 /* alinhamento da pág principal */
@@ -178,13 +178,19 @@ section#secao08 .iframe {
     padding-bottom: 6%;
 }
 
+#secao08 iframe{
+    width:450px; 
+    height:281px;
+}
+
 /* Definindo a cor do h2 */
 section#secao08 h2 {
     color: var(--font-color);
 }
 
-.esq, .dir {
+section#secao08 .esq, .dir {
     justify-content: center;
+
 }
 
 section#secao08 iframe {

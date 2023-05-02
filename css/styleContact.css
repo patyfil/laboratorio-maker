@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&display=swap');
 
 /* variáveis root*/
-@import url('variaveis.css');
+@import url('style.css');
 
 /* ==================== Formatação do formulário ==================== */
 /* Formatação do fundo do formulário */
@@ -16,7 +16,7 @@
 }
 /* Formatação do formulário */
 .contact .row form {
-    padding: 5rem 0.5rem;
+    padding: 5rem 20rem;
     text-align: center;
 }
 /* Formatação do título/legenda do formulário */
@@ -74,6 +74,9 @@ textarea {
 
 /*============= Início do media queries  =============*/
 @media (max-width:991px) {
+    .contact .row form {
+        padding: 5rem 3rem;
+    }
 
     /* ajustando formulário */
     .contact {
@@ -84,3 +87,8 @@ textarea {
         font-size: 70%;
     }
 }
+
+@media (max-width:768px) {
+    .contact .row form {
+        padding: 5rem 0.3rem;
+    }
