@@ -14,6 +14,14 @@
     --cinza-escuro: #4B4B4D;
 }
 
+/* "*" Irá corresponder a todos os elementos do documento. */
+* {
+    font-family: "Atma", "cursive", "Georgia", "Helvetica", "sans-serif";
+    font-size: 12pt;
+    color: white;
+    text-decoration: none;
+    transition: .2s linear;
+}
 
 /* ========================== Início da página principal ========================== */
 /* alinhamento da pág principal */
