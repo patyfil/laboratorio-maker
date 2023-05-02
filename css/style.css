@@ -47,9 +47,15 @@ body {
     background: black;
 }
 
-/* Definindo o padding das seções em 10% no lado esq e dir e zerando acima e abaixo */
+/* Definindo o padding das seções em 1% no lado esq e dir e zerando acima e abaixo */
 section {
-    padding: 0 10%;
+    flex-direction: rown;
+    padding: 0 1%;
+    width: auto;
+}
+
+.esq, .dir {
+    justify-content: center;
 }
 
 /* Definindo as características dos parágrafos e listas dos itens */
@@ -66,6 +72,7 @@ h1,
 h2,
 h3 {
     font-family: "Atma SemiBold";
+    text-align: center;
 }
 
 /* Definindo o tamanho da fonte dos títulos */
@@ -256,7 +263,7 @@ footer p {
 /* Fim das Redes Sociais do Footer */
 /* ========================== Fim do Footer ========================== */
 
-/* ========================== Início do media queries - RESPONSIVIDADE PARA CELULAR ==========================*/
+/* ==================================================== Início do media queries - RESPONSIVIDADE PARA CELULAR ====================================================*/
 @media (max-width:991px) {
     /* Definindo o tamanho das fontes padrão */
 
@@ -292,7 +299,7 @@ footer p {
         height: 60%;
     }
 
-    /* ========================== MOBILE MENU ========================== */
+    /* ==================================================== MOBILE MENU ==================================================== */
 
     #menu {
         display: block;
@@ -365,6 +372,16 @@ footer p {
     }
     /* ========================== FIM DO MENU MOBILE ========================== */
 
+    .container-galeria{
+        display: flex;
+    }
+
+    #secao08 .iframe{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
     /* Mobile botão - aumentar a largura dos botões */
     .button {
         width: 80%;

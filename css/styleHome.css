@@ -324,7 +324,7 @@ section#secao08 h2 {
 
     /* Definindo a largura dos iframes */
     section#secao08 iframe {
-        width: 400px;
+        width: auto;
         
     }
     /* mobile seção 08 - iframes para centralizar e quebrar conforme a tela */
@@ -332,6 +332,7 @@ section#secao08 h2 {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        gap: 1%;
     }
 
     /* MOBILE - Seção galeria de fotos */
@@ -378,9 +379,3 @@ section#secao08 h2 {
 }
 
 /* ============= MOBILE DA PÁG HOME ============= */
-@media (max-width:600px) {
-    .pag-principal {
-        padding: 20% 3%;
-        padding-bottom: 6%;
-        font-size: 1em;
-    }
