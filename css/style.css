@@ -225,6 +225,7 @@ footer span {
 /* Diminuindo o tamanho do parágrafo */
 footer p {
     font-size: 1em;
+    margin: 0;
 }
 
 /* Início Redes Sociais do Footer */
@@ -238,6 +239,10 @@ footer p {
 
 /* share é a class da seção redes */
 /* Criando e Posicionando os Cícurlos a partir dos Links(a) que estão dentro da div de class=share */
+.redes .share {
+    margin: 3%;
+}
+
 .redes .share a {
     height: 2em;
     width: 2em;
