@@ -212,7 +212,6 @@ footer .partes {
     display: flex;
     /* flex para dividir em 3 partes horizontais */
     justify-content: space-around;
-    padding: 5px;
 }
 /* Definindo a cor do h2 */
 footer h2 {
