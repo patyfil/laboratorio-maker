@@ -2,19 +2,13 @@
 
 /* Usando a regra @import para importar a fonte do Google em CSS */
 @import url('https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&display=swap');
-/* root é para declarar uma variável */
-:root {
-    --hover-color: #D1930E;
-    --font-color: #D1930E;
-    --border: 1px solid #D1930E;
-    --border-test: 1px solid #64e680;
-    --marrom: #847059;
-    --bordo: #5E2939;
-    --cinza-escuro: #4B4B4D;
-}
+
+/* variáveis root */
+@import url('variaveis.css');
+
 /* Formatando a página resposta */
 .resposta {
-    height: 60vh;
+    height: 100vh;
     margin-top: 7%;
     padding-top: 10%;
     text-align: center;
@@ -40,7 +34,8 @@
     }
     .resposta h3 {
         font-size: 0.8em;
-        font-family: "Atma light";
+        font-family: 'Atma', 'sans-serif';
+        font-weight: 300;
     }
 
 }

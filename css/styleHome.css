@@ -3,25 +3,8 @@
 /* Usando a regra @import para importar a fonte do Google em CSS */
 @import url('https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&display=swap');
 
-/* root é para declarar uma variável */
-:root {
-    --hover-color: #D1930E;
-    --font-color: #D1930E;
-    --border: 1px solid #D1930E;
-    --border-test: 1px solid #64e680;
-    --marrom: #847059;
-    --bordo: #5E2939;
-    --cinza-escuro: #4B4B4D;
-}
-
-/* "*" Irá corresponder a todos os elementos do documento. */
-* {
-    font-family: "Atma", "cursive", "Georgia", "Helvetica", "sans-serif";
-    font-size: 12pt;
-    color: white;
-    text-decoration: none;
-    transition: .2s linear;
-}
+/* variáveis root */
+@import url('variaveis.css');
 
 /* ========================== Início da página principal ========================== */
 /* alinhamento da pág principal */
