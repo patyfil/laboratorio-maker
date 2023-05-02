@@ -319,7 +319,7 @@ section#secao08 h2 {
 
     /* mobile 07 - posicionar as setas para não ultrapassar a página */
     section#secao07 img {
-        width: 100%;
+        width: 70%;
     }
 
     /* Definindo a largura dos iframes */
