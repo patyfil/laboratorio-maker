@@ -201,12 +201,6 @@ section#secao08 iframe {
         font-size: 1.2em;
     }
 
-    /* MOBILE - Seção galeria de fotos */
-    .carousel-container {
-        width: 100%;
-    }
-
-
     section#secao02,
     section#secao03,
     section#secao04,
@@ -256,9 +250,33 @@ section#secao08 iframe {
     }
 
 /* ============= MOBILE DA PÁG HOME ============= */
-    /* MOBILE - Seção galeria de fotos */
-    @media (max-width:768px) {
-    .container-galeria {
-        width: 80%;
-    }
+/* MOBILE - Seção galeria de fotos */
+@media (max-width: 768px) {
+  .carousel-container {
+    width: 100%;
+    margin: 20px auto;
+    border-radius: 10px;
+  }
+  
+  .carousel {
+    width: 400%;
+    margin: 0 auto;
+  }
+  
+  .carousel img {
+    width: 25%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  /* Estilos para o indicador em dispositivos móveis */
+  .indicator-container {
+    margin-top: 5px;
+  }
+  
+  .indicator {
+    width: 8px;
+    height: 8px;
+    margin: 0 3px;
+  }
 }
