@@ -215,6 +215,7 @@ footer .partes {
 }
 /* Definindo a cor do h2 */
 footer h2 {
+    display: inline-block;
     color: var(--font-color);
     text-align: left;
     margin: 20px 0;
