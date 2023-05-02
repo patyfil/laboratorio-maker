@@ -217,6 +217,7 @@ footer .partes {
 /* Definindo a cor do h2 */
 footer h2 {
     color: var(--font-color);
+    text-align: left;
 }
 /* Definindo a cor do span */
 footer span {
@@ -395,13 +396,16 @@ footer p {
         flex-direction: column;
         align-content: center;
         justify-content: center;
-
     }
 
-    /* Definindo a cor do h2 */
-    footer h2 {
+    footer .parte1, .parte2, .parte3 {
         display: inline-block;
+
     }
+
+    /* footer h2 {
+        display: inline-block;
+    } */
 
     /* Mobile - padding em volta dos círculos */
     footer .share {
