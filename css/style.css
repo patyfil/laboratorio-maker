@@ -398,14 +398,14 @@ footer p {
         justify-content: center;
     }
 
-    footer .parte1, .parte2, .parte3 {
+    /* footer .parte1, .parte2, .parte3 {
         display: inline-block;
 
-    }
-
-    /* footer h2 {
-        display: inline-block;
     } */
+
+    footer h2 {
+        display: inline-block;
+    }
 
     /* Mobile - padding em volta dos círculos */
     footer .share {
