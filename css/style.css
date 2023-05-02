@@ -58,6 +58,7 @@ li {
     font-size: 1.3em;
     /*15,6pt*/
     font-family: "Atma Medium";
+    width: auto;
 }
 
 /* Definindo a fonte dos títulos */
@@ -151,6 +152,7 @@ header .logo {
     /* 'align-self' Centraliza verticalmente */
     height: 60%;
     padding: 1.3% 1.3%;
+    width: 40%;
 }
 
 /* menu de navagação */
@@ -161,7 +163,7 @@ header .logo {
 
 /* tag âncora - tamanho da fonte dos links do menu */
 #nav a {
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 /* efeito sublinhado quando passa o mouse nas âncoras */

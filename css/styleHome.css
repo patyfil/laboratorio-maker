@@ -376,3 +376,11 @@ section#secao08 h2 {
         margin-top: -30px; */
     }
 }
+
+/* ============= MOBILE DA PÁG HOME ============= */
+@media (max-width:600px) {
+    .pag-principal {
+        padding: 20% 3%;
+        padding-bottom: 6%;
+        font-size: 1em;
+    }
