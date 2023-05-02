@@ -16,7 +16,7 @@
 }
 /* Formatação do formulário */
 .contact .row form {
-    padding: 5rem 20rem;
+    padding: 5% 20%;
     text-align: center;
 }
 /* Formatação do título/legenda do formulário */
@@ -58,24 +58,37 @@ textarea {
     height: 150px;
     width: 100%;
     background-color: black;
-    padding: 2rem;
+    padding: 1rem;
     font-size: 1.2em;
 }
+
 /* Formatação do texto do checkbox */
 .notificacao {
     font-size: 1.2em;
     text-align: initial;
 }
 /* Diminuindo um pouco o botão e os efeitos */
-.button {
-    font-size: 1.7em;
+.button-contact {
+    background-color: var(--hover-color);
+    font-size: 1.5em;
+    display: inline-block;
+    padding: 10px;
+    margin: 0.5em;
+    width: 80%;
+    border-radius: 0.5em;
+    border: none;
     box-shadow: 0.3em 0.3em 0.3em #999;
+    cursor: pointer;
+    /*cursor pointer aparece a mãozinha quando passa o mouse em cima*/
 }
 
 /*============= Início do media queries  =============*/
 @media (max-width:991px) {
+
+    /* Formatação do formulário */
     .contact .row form {
-        padding: 5rem 3rem;
+        padding: 1% 1%;
+        text-align: center;
     }
 
     /* ajustando formulário */
@@ -88,7 +101,9 @@ textarea {
     }
 }
 
-@media (max-width:768px) {
-    .contact .row form {
-        padding: 5rem 0.3rem;
+@media (max-width: 768px) {
+    .button-contact {
+        font-size: 1em;
     }
+}
+
