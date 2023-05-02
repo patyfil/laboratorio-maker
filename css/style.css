@@ -226,11 +226,6 @@ footer span {
 footer p {
     font-size: 1em;
 }
-/* Configurando a última linha do footer */
-.copyright {
-    padding: .5em;
-    text-align: center;
-}
 
 /* Início Redes Sociais do Footer */
 /* Alinhando os icones das redes sociais dentro do círculo */
@@ -260,6 +255,13 @@ footer p {
     background-color: var(--bordo);
 }
 /* Fim das Redes Sociais do Footer */
+
+/* Configurando a última linha do footer */
+.copyright {
+    padding: .5em;
+    text-align: center;
+}
+
 /* ========================== Fim do Footer ========================== */
 
 /* ==================================================== Início do media queries - RESPONSIVIDADE PARA CELULAR ====================================================*/
