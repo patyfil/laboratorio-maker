@@ -41,7 +41,8 @@ span {
 
 /* Formatando a página resposta */
 .resposta {
-    position: relative;
+    display: static;
+
     height: auto;
 
     text-align: center;
