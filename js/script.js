@@ -103,7 +103,7 @@ document.getElementById('emailConfirm').innerHTML = emailConfir;
 
 
 
-// ********* API DO YOUTUBE *********
+// ********* API do Youtube e Google Maps *********
 // função para criar o mapa
 function initMap() {
   const map = new google.maps.Map(document.querySelector('.map iframe'), {
