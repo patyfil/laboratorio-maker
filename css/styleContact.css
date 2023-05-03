@@ -7,6 +7,7 @@
 @import url('style.css');
 
 /* ==================== Formatação do formulário ==================== */
+
 /* Formatação do fundo do formulário */
 .contact .row {
     background-color: var(--cor-form);

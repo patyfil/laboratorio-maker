@@ -19,34 +19,22 @@ function toggleMenu(event) {
 btnMobile.addEventListener("click", toggleMenu);
 btnMobile.addEventListener("touchstart", toggleMenu);
 
+
 // ********************* scripts da galeria de fotos *********************
-const carousel = document.querySelector('.carousel');
-const images = carousel.querySelectorAll('img');
-const indicators = document.querySelectorAll('.indicator');
+window.addEventListener('load', () => {
+  const carousel = document.querySelector('.carousel');
+  const images = carousel.querySelectorAll('img');
+  const indicators = document.querySelectorAll('.indicator');
 
-let index = 0;
+  let index = 0;
 
-function slide() {
-  index++;
+  function slide() {
+    index++;
 
-  if (index > images.length - 1) {
-    index = 0;
-  }
+    if (index > images.length - 1) {
+      index = 0;
+    }
 
-  carousel.style.transform = `translateX(-${index * 25}%)`;
-
-  indicators.forEach((indicator) => {
-    indicator.classList.remove('active');
-  });
-
-  indicators[index].classList.add('active');
-}
-
-setInterval(slide, 4000);
-
-indicators.forEach((indicator, i) => {
-  indicator.addEventListener('click', () => {
-    index = i;
     carousel.style.transform = `translateX(-${index * 25}%)`;
 
     indicators.forEach((indicator) => {
@@ -54,18 +42,64 @@ indicators.forEach((indicator, i) => {
     });
 
     indicators[index].classList.add('active');
+  }
+
+  setInterval(slide, 4000);
+
+  indicators.forEach((indicator, i) => {
+    indicator.addEventListener('click', () => {
+      index = i;
+      carousel.style.transform = `translateX(-${index * 25}%)`;
+
+      indicators.forEach((indicator) => {
+        indicator.classList.remove('active');
+      });
+
+      indicators[index].classList.add('active');
+    });
   });
 });
 
 // ********* scripts para capturar o nome e imprimir na página resposta **********
-var capturando = "";
 
 function capturar() {
-  capturando = document.getElementById('name').value;
-  document.getElementById('../resposta.html#valorDigitado').innerHTML = capturando;
-  localStorage.setItem('valorDigitado', capturando);
+  // Pega os valores dos campos do formulário
+  var nome = document.getElementById('name').value;
+  var email = document.getElementById('email').value;
+  var telefone = document.querySelector('input[type="tel"]').value;
+  var mensagem = document.querySelector('textarea[name="message"]').value;
+
+  // Salva os valores no localStorage
+  localStorage.setItem('nome', nome);
+  localStorage.setItem('email', email);
+  localStorage.setItem('telefone', telefone);
+  localStorage.setItem('mensagem', mensagem);
 }
 
+// Atualiza o HTML da página de resposta para exibir os valores do formulário
+var resposta = document.getElementById('resposta');
+var nome = localStorage.getItem('nome');
+
+var email = localStorage.getItem('email');
+email = email.toLowerCase();
+
+var telefone = localStorage.getItem('telefone');
+var telefone = localStorage.getItem('telefone');
+telefone = telefone.replace(/^(\d{2})(\d{4,5})(\d{4})$/, "($1) $2-$3");
+
+var mensagem = localStorage.getItem('mensagem');
+
+nome = nome.toLowerCase().replace(/\b\w/g, function (l) {
+  return l.toUpperCase();
+});
+
+document.getElementById('nome').innerHTML = nome;
+document.getElementById('email').innerHTML = email;
+document.getElementById('telefone').innerHTML = telefone;
+document.getElementById('mensagem').innerHTML = mensagem;
+
+var emailConfir = email;
+document.getElementById('emailConfirm').innerHTML = emailConfir;
 
 
 

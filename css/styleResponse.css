@@ -6,11 +6,44 @@
 /* variáveis root */
 @import url('style.css');
 
+#corpo {
+    margin-top: 20%;
+    margin-bottom: 10%;
+    padding: 0;
+}
+
+* {
+    font-size: 16px;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+span {
+    color: var(--font-color);
+}
+
+.cadastro {
+    border: var(--border);
+    width: auto;
+    padding: 3%;
+    margin: 2%;
+    display: inline-block;
+    justify-content: center;
+}
+
+.inscricao {
+    color: var(--font-color);
+    font-size: 1.5em;
+}
+
 /* Formatando a página resposta */
 .resposta {
-    height: 100vh;
-    margin-top: 7%;
-    padding-top: 10%;
+    position: relative;
+    height: auto;
+
     text-align: center;
     font-size: 1.5em;
 }
@@ -27,10 +60,9 @@
 @media (max-width:991px) {
 
     .resposta {
-        margin-top: 20%;
-        padding: 0 7%;
+        padding: 0 1%;
         font-size: 1.2em;
-        line-height: 200%;
+        height: auto;
     }
     .resposta h3 {
         font-size: 0.8em;
