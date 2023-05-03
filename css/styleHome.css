@@ -149,6 +149,14 @@ section#secao06 h3 {
     color: var(--font-color);
 }
 
+section#secao06 img{
+    width: 40%;
+}
+
+section#secao06 img.desconto{
+    width: 60%;
+}
+
 /*============= Fim da seção 6 =============*/
 /*============= Início da seção 7 - call to action - Preencher Formulário =============*/
 /* Definindo a tela e posição dos elementos na tela */
